@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conectar/Pregação</title>
+  <link rel="stylesheet" href="conectarpregacao.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand" onclick="window.location.href='index.html';" style="cursor: pointer;">
+      <img src="/imagem/exemplos/maisUmParaCristo.png" alt="Logo" class="logo">
+    </div>
+    <div class="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-menu">
+      <li><a href="index.html">Visitar/Contato</a></li>
+      <li><a href="index.html">Conectar/Pregação</a></li>
+      <li><a href="index.html">Projeto Servir</a></li>
+      <li><a href="index.html">Discipulado</a></li>
+      <li><a href="index.html">Doar</a></li>
+      <li><a href="index.html">Dízimo/Oferta</a></li>
+      <li><a href="index.html">+1 Para Cristo</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1 class="animate__animated animate__fadeInDown">Conectar/Pregação</h1>
+
+    <div class="tabs-container">
+      <div class="tabs">
+        <button class="tab-button active" onclick="openTab('form')">Formulário</button>
+        <button class="tab-button" onclick="openTab('motivation')">Por que Pregar?</button>
+        <button class="tab-button" onclick="openTab('schedule')">Agenda</button>
+      </div>
+
+      <div id="form" class="tab-content active animate__animated animate__fadeIn">
+        <form id="batismo-form" class="animate__animated animate__fadeInUp">
+          <label for="igreja"> Sua Igreja:</label>
+          <input type="text" id="igreja" name="igreja" required>
+
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+          
+          <label for="funcao">Função:</label>
+          <input type="text" id="funcao" name="funcao" required>
+
+          <label for="sobrenome">Sobrenome:</label>
+          <input type="text" id="sobrenome" name="sobrenome" required>
+          
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="comentario">Comentário:</label>
+          <textarea id="comentario" name="comentario"></textarea>
+          
+          <button type="submit" class="pulse-button">Enviar</button>
+        </form>
+      </div>
+
+      <div id="motivation" class="tab-content animate__animated animate__fadeIn">
+        <h2 class="motivation-title">Por que Pregar na +1 Para Cristo?</h2>
+        <div class="motivation-cards">
+          <div class="card animate__animated animate__fadeInLeft">
+            <i class="fas fa-bullhorn"></i>
+            <h3>Proclamação da Verdade</h3>
+            <p>"Como, pois, invocarão aquele em quem não creram? E como crerão naquele de quem não ouviram falar? E como ouvirão, se não há quem pregue?" - Romanos 10:14</p>
+            <p class="card-description">Na +1 Para Cristo, acreditamos no poder transformador da Palavra de Deus proclamada com ousadia e amor.</p>
+          </div>
+          <div class="card animate__animated animate__fadeInUp">
+            <i class="fas fa-hands-helping"></i>
+            <h3>Alcance de Vidas</h3>
+            <p>"Ide por todo o mundo e pregai o evangelho a toda criatura." - Marcos 16:15</p>
+            <p class="card-description">Nossa missão é alcançar mais um para Cristo, impactando vidas através da mensagem do evangelho.</p>
+          </div>
+          <div class="card animate__animated animate__fadeInRight">
+            <i class="fas fa-fire-alt"></i>
+            <h3>Poder do Espírito Santo</h3>
+            <p>"Mas recebereis poder, ao descer sobre vós o Espírito Santo, e sereis minhas testemunhas..." - Atos 1:8</p>
+            <p class="card-description">Pregamos com a unção e direção do Espírito Santo, que capacita e transforma.</p>
+          </div>
+          <div class="card animate__animated animate__fadeInLeft">
+            <i class="fas fa-heart"></i>
+            <h3>Amor em Ação</h3>
+            <p>"Porque o amor de Cristo nos constrange." - 2 Coríntios 5:14</p>
+            <p class="card-description">O amor de Cristo nos motiva a compartilhar Sua mensagem com todos.</p>
+          </div>
+          <div class="card animate__animated animate__fadeInUp">
+            <i class="fas fa-book-open"></i>
+            <h3>Palavra Viva</h3>
+            <p>"Porque a palavra de Deus é viva e eficaz..." - Hebreus 4:12</p>
+            <p class="card-description">Cremos no poder da Palavra para transformar corações e renovar mentes.</p>
+          </div>
+          <div class="card animate__animated animate__fadeInRight">
+            <i class="fas fa-users"></i>
+            <h3>Comunidade de Fé</h3>
+            <p>"E perseveravam na doutrina dos apóstolos, e na comunhão..." - Atos 2:42</p>
+            <p class="card-description">Somos uma família comprometida com o crescimento espiritual e evangelismo.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="schedule" class="tab-content animate__animated animate__fadeIn">
+        <div class="schedule-container">
+          <div class="schedule-item">
+            <h3>Próximas Pregações</h3>
+            <div class="schedule-list">
+              <div class="schedule-entry">
+                <span class="date">Dom, 24 Mar</span>
+                <span class="event">Culto de Celebração</span>
+                <span class="time">19:00</span>
+              </div>
+              <div class="schedule-entry">
+                <span class="date">Qua, 27 Mar</span>
+                <span class="event">Culto de Oração</span>
+                <span class="time">20:00</span>
+              </div>
+              <div class="schedule-entry">
+                <span class="date">Sáb, 30 Mar</span>
+                <span class="event">Evangelismo</span>
+                <span class="time">15:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-section animate__animated animate__fadeInUp">
+      <p>Entre em contato via WhatsApp ou Email para saber mais sobre as pregações:</p>
+      <div class="contact-buttons">
+        <a href="https://wa.me/5511912345678" class="button" target="_blank">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="mailto:contato@igreja.com" class="button">
+          <i class="fas fa-envelope"></i> Email
+        </a>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3>Igreja +1 Para Cristo</h3>
+        <p>Transformando vidas através do amor de Cristo</p>
+        <p>CNPJ: 44.493.135/000101</p>
+        <p>Av. Ver. Lydio Martins Corrêa, 32 - Jardim Sao Miguel, Guarujá - SP</p>
+        <p>Cep: 11432-501, Próximo ao mini Mercado Popular</p>
+        <p>Guarujá - São Paulo</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://wa.me/5513988554632" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com/valdir.barbosa.35380399/photos_by" class="social-link"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>&copy; 2025 Igreja +1 Para Cristo. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="conectarpregacao.js"></script>
+</body>
+</html>
